@@ -1,0 +1,438 @@
+@font-face {
+    font-family: BlackHansans-Regular;
+    src: url("/Font/BlackHanSans-Regular.ttf");
+}
+
+@media screen and (max-width: 600px){
+    .top-header>header>.top-div>.header-section>.under-head>input {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+}
+
+
+body {
+    font-family: BlackHansans-Regular;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #f2f2f2;
+    --img-border-radius: 10px;
+
+}
+/*  layout  */
+.layout-1 {
+    margin: 0 auto;
+    padding: 0 18.75vw;
+}
+body > .details > p {
+    display: flex;
+    gap: 20px;
+}
+
+.asdf{
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+header {
+    height: 100%;
+    background-color: #dcd8c3;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+body > header > .search-container {
+}
+
+.header-div>.title-a{
+    margin: 0;
+    font-size: 2rem;
+    color: #384853;
+    text-align: center;
+    flex: 1;
+    text-decoration: none;
+}
+
+
+.header-section {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.top-header{
+    position: relative;
+}
+
+/* Under-head */
+.top-header>header>.top-div>.header-section>.under-head{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.top-header>header>.top-div>.header-section>.under-head>span{
+    position: relative;
+    font-size: 30px;
+}
+.top-header>header>.top-div>.header-section>.under-head>div{
+
+}
+.top-header>header>.top-div>.header-section>.under-head>input{
+    /*position: relative;*/
+    justify-content: space-between;
+    height: 30px;
+    display: flex;
+    width: 100%;
+
+}
+.top-header>header>.top-div>.header-section>.under-head>input:nth-child(1){
+    outline: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 2px solid;
+    border-width: 5px;
+    border-color: rgb(41, 75, 82);
+    border-right-width: 2px;
+}
+.top-header>header>.top-div>.header-section>.under-head>input:nth-child(2){
+    outline: none;
+    border: 2px solid;
+    border-width: 5px;
+    border-color: rgb(41, 75, 82);
+}
+.top-header>header>.top-div>.header-section>.under-head>input:nth-child(3){
+    outline: none;
+    border: 2px solid;
+    border-width: 5px;
+    border-left-width: 1px;
+    border-color: rgb(41, 75, 82);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* db-head */
+.db-head{
+    font-size: 2rem;
+    font-weight:900;
+    /*position: relative;*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+.db-head>div>a{
+    text-decoration: none;
+    color: black;
+}
+.top-header>header>.top-div>.header-section>.db-head>.lodge {
+    height: 70%;
+    /*position: absolute;*/
+}
+.top-header>header>.top-div>.header-section>.db-head>.lodge:nth-child(1){
+    position: absolute;
+    top: 300px;
+    right: 25%;
+}
+.top-header>header>.top-div>.header-section>.db-head>.lodge:nth-child(2){
+    position: absolute;
+    left: 25%;
+    top: 300px;
+}
+.top-header>header>.top-div>.header-section>.db-head>div>a{
+    text-decoration: none;
+    color: rgb(41, 75, 82);
+}
+
+/* .logo img를 왼쪽에 고정 */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.logo > img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.header-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #8EB988;
+    border-radius: 10%;
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    opacity: 0.7;
+    transition: opacity .5s ease-in-out, scale .5s ease-in-out;
+}
+.header-btn:hover{
+    opacity: 1;
+    scale: calc(1.1);
+}
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #384853;
+    text-align: center;
+    flex: 1;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* 검색 바와 로그인 버튼 사이의 간격 조정 */
+}
+
+.search-bar input {
+    /*padding: 5px;*/
+    /*margin: 0 5px;*/
+    border-radius: 5px;
+    width: 30%;
+    border: 1px solid #ccc;
+}
+
+.top-div {
+    width: 80%;
+}
+
+.search-bar button {
+    /*padding: 5px 10px;*/
+    width: 10%;
+    background-color: #384853;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bottom-bar div {
+    /*grid-column-end: auto;*/
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.sign-in {
+    width: 5%;
+    height: 5%;
+    background-color: #3d3f33;
+    color: white;
+    /*padding: 5px 10px;*/
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.image-div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.cottage-info {
+    height: 100%;
+    width: 100%;
+}
+.cottage-info > .cottage-images{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 180px);
+    grid-gap: 10px;
+    position: relative;
+    width: 100%;
+
+}
+.cottage-images img {
+    width: 100%;
+    height: 100%;
+    /*position: absolute;*/
+    background-color: #ABCCCA;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.cottage-images img:hover{
+    /*filter: brightness(80%);*/
+    transition: .5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.cottage-images img:first-child{
+    grid-row: 1 / 3;
+    border-bottom-left-radius: var(--img-border-radius) ;
+    border-top-left-radius: var(--img-border-radius);
+
+}
+.cottage-images img:nth-child(2){
+
+}
+.cottage-images img:nth-child(3){
+    border-top-right-radius: var(--img-border-radius);
+
+}
+.cottage-images img:nth-child(4){
+
+}
+.cottage-images img:nth-child(5){
+
+    border-bottom-right-radius: var(--img-border-radius);
+}
+
+
+.content {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.details {
+    flex: 1;
+
+    padding: 3px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.reservation{
+    width: 300px;
+}
+.details > .description {
+    flex: 1;
+}
+.details > .reservation {
+    flex-basis: 300px;
+    background-color: #dcd8c3;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.ameni-border {
+    box-sizing: border-box;
+    border-top: 3px solid #294B52;
+    border-bottom: 3px solid #294B52;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+    width: 100%;
+}
+
+
+.ameni-border > .amenities {
+    box-sizing: border-box;
+    /*border: 1px solid ;*/
+    border-top-color: #294B52;
+    border-bottom-color: #294B52;
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.ameni-border > .amenities-1 {
+    width: 80%;
+    height: 80%;
+}
+
+.amenities span {
+    gap: 30px;
+    display: grid;
+}
+
+.amenities-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transform: translate(-340px, 40px);
+}
+
+.reservation {
+
+    font-size: larger;
+    padding: 20px;
+    background-color: #dcd8c3;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.price {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.date-selection,
+.guest-selection {
+    color: #CBCBAD;
+    border-radius: 10px;
+    background-color: #294B52;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+.total-price {
+    margin: 10px 0;
+    font-weight: bold;
+    border-radius: 13px;
+}
+
+.reserve-button {
+    background-color: #384853;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.reserve-button:hover{
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #384853;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+footer p {
+    margin: 5px 0;
+}

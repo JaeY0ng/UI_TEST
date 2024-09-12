@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Netflix & Chill</title>
+    <link href="layout.css" rel="stylesheet">
+    <style>
+        @media screen and (max-width: 600px){
+            .wrapper>header>.top-div>.header-section>.under-head>input {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/53528e84d3.js"></script>
+</head>
+<body class="layout-1">
+
+<div class="wrapper">
+    <div class="top-header">
+        <header>
+            <div class="top-div">
+                <section class="header-section">
+                    <div class="header-div">
+                        <div class="logo">
+                            <img alt="N&C.CO 로고" src="N&C Logo.png">
+                        </div>
+                        <a href="NNC.html" class="title-a" ">NETFLIX & CHILL</a>
+                        <a href="Login-page/로그인페이지.html" class="header-btn">sign in</a>
+                    </div>
+                    <div class="under-head">
+                        <input placeholder="지역" type="text"/>
+                        <input placeholder="날짜" type="text"/>
+                        <input placeholder="인원" type="text"/>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </section>
+<!--            </div>-->
+            <div class="db-head">
+                <div class="lodge"></div>
+                <div class="lodge"></div>
+            </div>
+        </header>
+    </div>
+
+<div class="image-div">
+<div class="cottage-info">
+    <div><h2>스누폰 코티지</h2></div>
+    <section class="cottage-images">
+        <img src="cottage-image/코티지1.jpg" alt="코티지1">
+        <img src="cottage-image/코티지2.jpg" alt="코티지2">
+        <img src="cottage-image/코티지3.jpg" alt="코티지3">
+        <img src="cottage-image/코티지4.jpg" alt="코티지4">
+        <img src="cottage-image/코티지5.jpg" alt="코티지5">
+    </section>
+</div>
+</div>
+
+
+<section class="content">
+    <section class="details">
+        <div class="ameni-border">
+            <div class="amenities">
+                     <span><i class="fa-solid fa-wifi"> W i F i</i>
+                </span>
+                    <br>
+                    <span>
+                    <i class="fa-solid fa-tv"> T V</i>
+                </span>
+                    <br>
+                    <span>
+                    <i class="fa-solid fa-fire-burner"> 난방 가능</i>
+                </span>
+                    <br>
+                    <span>
+                    <i class="fa-solid fa-fan"> 에어컨</i>
+                </span>
+                <div class="amenities-1">
+                <span>
+                    <i class="fa-solid fa-bath"> 실내 풀</i>
+                </span>
+                </div>
+            </div>
+        </div>
+        <h2>Alston, 영국의 별장 전체</h2>
+        <p>
+            <i class="fa-solid fa-person"> 최대 인원 5 명 </i>
+            <i class="fa-solid fa-bed"> 침실 2 개 </i>
+            <i class="fa-solid fa-bed"> 침실 4 개 </i>
+            <i class="fa-solid fa-toilet"> 욕실 1 개</i>
+        </p>
+        <h3>숙소 설명</h3>
+        <p class="description">
+            숙소 설명
+            이 코티지는 외딴 한적한 위치에 있습니다.
+            계곡 위로 장관을 이루는 멋진 전망을 자랑하는 조용한 언덕 꼭대기에 위치한 농가 옆에 있습니다.
+            무어랜드, 숲, 폭포, 강변으로 둘러싸여 있습니다.
+            페닌웨이 (Peninne Way) 에서 알스턴 (Alston) 을 운전하거나
+            도보로 7마일 거리에 있으며 증기기관차도 타보세요!
+            할트휘슬에서 7마일 떨어진 세인즈베리와 부츠 (슈퍼마켓과 약국).
+            멋진 시골의 위치와 꽤 아늑한 인테리어를 자랑합니다.
+            게스트 이용 가능 공간/시설
+            전용 농지, 무어, 숲, 강 등 80평방미터
+            <br>
+            <br>
+            <br>
+            기타 주의사항 <br><br>
+            체크인은 오후 4시입니다.<br><br>체크아웃은 오전 11시입니다.
+        </p>
+        <section class="reservation">
+            <div class="price">
+                <span><i class="fa-solid fa-coins"> ₩ 162,619/박</i></span>
+            </div>
+            <div class="date-selection">
+                <label>체크인</label>
+
+                <input type="date" value="2024-09-09">
+                <br>
+                <label>체크아웃</label>
+
+                <input type="date" value="2024-09-10">
+                <br>
+            </div>
+            <div class="guest-selection">
+                <label>인원</label>
+                <select>
+                    <option>게스트 1명</option>
+                    <option>게스트 2명</option>
+                    <option>게스트 3명</option>
+                    <option>게스트 4명</option>
+                    <option>게스트 5명</option>
+                    <option>게스트 6명</option>
+                    <option>게스트 7명</option>
+                    <option>게스트 8명</option>
+                </select>
+            </div>
+            <div class="total-price">
+                <p>₩162,619 x 5박 = ₩813,095</p>
+                <p>청소비 = ₩25,950</p>
+                <p>총 합계 = ₩839,045</p>
+            </div>
+            <a href="Login-page/로그인페이지.html" class="reserve-button">예약하기</a>
+        </section>
+    </section>
+
+
+</section>
+
+<footer>
+
+    <p>개인정보처리방침 | 쿠키정책 | 이용약관</p>
+
+    <p>제작: N&C.CO UC</p>
+</footer>
+</div>
+</body>
+</html>
