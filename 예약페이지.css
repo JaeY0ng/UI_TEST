@@ -24,7 +24,7 @@ body {
 /*  layout  */
 .layout-1 {
     margin: 0 auto;
-    padding: 0 18.75vw;
+    padding: 25px 18.75vw;
 }
 body > .details > p {
     display: flex;
@@ -37,6 +37,7 @@ body > .details > p {
     gap: 200px;
 }
 header {
+    border-radius: 20px;
     height: 100%;
     background-color: #dcd8c3;
     align-items: center;
@@ -47,7 +48,8 @@ body > header > .search-container {
 }
 
 .header-div>.title-a{
-    margin: 0;
+
+    margin-top: 20px;
     font-size: 2rem;
     color: #384853;
     text-align: center;
@@ -67,6 +69,7 @@ body > header > .search-container {
     text-align: center;
 }
 .top-header{
+
     position: relative;
 }
 
@@ -310,18 +313,18 @@ h1 {
 
 
 .content {
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     display: flex;
     justify-content: space-between;
+
 }
 
 .details {
     flex: 1;
-
-    padding: 3px;
+    padding: 0 25px;
     background-color: white;
-    margin: 20px;
+    margin-top: 10px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -432,11 +435,12 @@ h1 {
 }
 
 footer {
+    border-radius: 20px;
     background-color: #384853;
     color: white;
     text-align: center;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 5px;
     font-size: 0.8em;
 }
 
