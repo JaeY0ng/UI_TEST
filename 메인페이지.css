@@ -1,6 +1,4 @@
-@font-face {
-    font-family: 'Black Han Sans', sans-serif;
-}
+
 body{
     font-family: 'Black Han Sans', sans-serif;
     height: 70vw;
@@ -98,7 +96,10 @@ body{
     border-radius: 30px;
 }
 
-
+.deae{
+    height: 100%;
+    width: 100%;
+}
 /* Under-head */
 .wrapper>header>.under-head{
     margin-top: 50px;
@@ -149,6 +150,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 100px;
 }
 .wrapper>header>.db-head>.lodge{
     width: 100vw;
@@ -157,11 +159,15 @@ body{
 }
 .wrapper>header>.db-head>.lodge:nth-child(1){
     position: absolute;
+    width: 10vw;
+    height: 5vw;
     top: 300px;
     left: 20%;
 }
 .wrapper>header>.db-head>.lodge:nth-child(2){
     position: absolute;
+    width: 10vw;
+    height: 5vw;
     left: 66%;
     top: 300px;
 }
@@ -170,33 +176,33 @@ body{
     color: rgb(41, 75, 82);
 }
 .tool-bar{
-    
+    z-index: 10;
     color: rgb(203, 203, 173);
     background-color: #384853;
     position: absolute;
-    width: 100%;
-    height: 0px;
-    margin: 15px 0px;
+    width: 80vw;
+    height: 270px;
+    margin: 0px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    
     visibility: hidden;
-    opacity: 0;
-    transition : height 0.3s ease,opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+    transition : height 0.3s ease,opacity 0.3s ease, visibility 0.3s ease, transform 1s ease;
 
 }
-.tool-bar>div{
+.tool-bar>ul{
+    padding: 5px;
     width: 60vw;
     height: 100%;
     font-size: 1.8rem;
 }
-.tool-bar>div:nth-child(1){
-    margin-left: 5vw;
+.tool-bar>ul:nth-child(1){
+    margin-left: 1vw;
 }
-.tool-bar>div:nth-child(2){
-    margin-right: 4vw;
+.tool-bar>ul:nth-child(2){
+    margin-right: 3vw;
 }
 
 /* main */
@@ -239,9 +245,6 @@ body{
 
 
 
-
-
-
 .body-bottom{
     left: 220px;
     display: grid;
@@ -253,6 +256,7 @@ body{
     column-gap: auto;
     row-gap: 100px;
     height: 100%;
+    justify-content: center;
 }
 .body-bottom>.card{
     position: relative;
@@ -278,16 +282,17 @@ body{
 
 }
 footer {
+    position: absolute; /* 항상 화면 하단에 고정 */
     bottom: 0;
-    position: absolute;
     background-color: #384853;
     color: white;
     text-align: center;
     padding: 10px;
-    margin-top: 20px;
     font-size: 0.8em;
     width: 100%;
-    
+    z-index: 1000; /* 다른 요소 위에 고정 */
+    margin-top: 0; /* 불필요한 여백 제거 */
+    justify-content: center;
 }
 
 footer p {
@@ -296,5 +301,12 @@ footer p {
 .db-head:hover ~ .tool-bar{
     opacity:1;
     visibility: visible;
- height: 270px;
+    height: 270px;
+    width: 100%;
     }
+.tool-bar:hover{
+    opacity:1;
+    visibility: visible;
+    height: 270px;
+    width: 100%;
+        }
