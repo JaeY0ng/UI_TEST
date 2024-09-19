@@ -76,13 +76,12 @@ body > header > .search-container {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-.top-header>header>.top-div>.header-section>.under-head>span{
-    position: relative;
-    font-size: 30px;
-}
+/*.top-header>header>.top-div>.header-section>.under-head>span{*/
+/*    position: relative;*/
+/*    font-size: 30px;*/
+/*}*/
 .top-header>header>.top-div>.header-section>.under-head>div{
 
 }
@@ -94,6 +93,13 @@ body > header > .search-container {
     width: 100%;
 
 }
+.top-header>header>.top-div>.header-section>.under-head>a{
+    color: black;
+}
+/*.under-head>a>i {*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*}*/
 .top-header>header>.top-div>.header-section>.under-head>input:nth-child(1){
     outline: none;
     border-top-left-radius: 15px;
@@ -327,6 +333,7 @@ h1 {
     width: 300px;
 }
 .details > .description {
+
     flex: 1;
 }
 .details > .reservation {
