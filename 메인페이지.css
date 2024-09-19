@@ -1,4 +1,6 @@
-
+@font-face {
+    font-family: 'Black Han Sans', sans-serif;
+}
 body{
     font-family: 'Black Han Sans', sans-serif;
     height: 70vw;
