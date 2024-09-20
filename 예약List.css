@@ -4,7 +4,7 @@
 }
 body {
   background-color: #f2f2f2;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 * {
@@ -13,7 +13,7 @@ body {
   padding: 0;
 }
 .layout-1 {
-  padding: 0 10%;
+  padding: 0;
 }
 a {
   color: black;
@@ -99,6 +99,7 @@ select{
   margin-left: 60px;
 }
 .wrapper > header > .top-header > .logo > a > img {
+  display: block;
   height: 100%;
 }
 .wrapper > header > .top-header > div:nth-child(2) {
@@ -159,8 +160,8 @@ select{
   margin-bottom: 30px;
 }
 
-.wrapper > header > .bottom-header > nav {
-}
+/* .wrapper > header > .bottom-header > nav {
+} */
 .mainmenu {
   display: flex;
   justify-content: center;
@@ -207,7 +208,9 @@ select{
 
 }
 
-
+.wrapper > header > .bottom-header > nav li {
+  padding: 0;
+}
 /* main 페이지 */
 .wrapper > main {
   background-color: white;
