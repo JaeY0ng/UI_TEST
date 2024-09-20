@@ -4,7 +4,7 @@
 }
 body {
   background-color: #f2f2f2;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 * {
@@ -13,7 +13,7 @@ body {
   padding: 0;
 }
 .layout-1 {
-  padding: 0;
+  padding: 0 10%;
 }
 a {
   color: black;
@@ -36,7 +36,7 @@ select{
 /*  */
 @media screen and (max-width:1024px){
   .wrapper > main > section > .info> .info_top {
-    /* display: none; */
+    display: none;
     border-bottom:none !important;
   }
   .info_bottom{
@@ -57,7 +57,7 @@ select{
   }
 
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:650px){
   .info_top{
     display: none !important;
   }
@@ -75,6 +75,7 @@ select{
 /*  */
 .wrapper {
   margin: 0 auto;
+  width:100%;
 }
 .wrapper > header {
   height: 430px;
@@ -99,7 +100,6 @@ select{
   margin-left: 60px;
 }
 .wrapper > header > .top-header > .logo > a > img {
-  display: block;
   height: 100%;
 }
 .wrapper > header > .top-header > div:nth-child(2) {
@@ -160,8 +160,8 @@ select{
   margin-bottom: 30px;
 }
 
-/* .wrapper > header > .bottom-header > nav {
-} */
+.wrapper > header > .bottom-header > nav {
+}
 .mainmenu {
   display: flex;
   justify-content: center;
@@ -175,10 +175,10 @@ select{
   align-items: center;
 }
 .mainmenu>li:nth-child(1){
-    padding-left:500px;
+
 }
 .mainmenu>li:nth-child(2){
-    padding-right:500px;
+
 }
 
 .mainmenu:hover>li .submenu{
@@ -208,21 +208,18 @@ select{
 
 }
 
-.wrapper > header > .bottom-header > nav li {
-  padding: 0;
-}
+
 /* main 페이지 */
 .wrapper > main {
   background-color: white;
 }
 .wrapper > main > section {
-  height: 300px;
   display: flex;
   justify-content: space-between;
 }
 /* 숙소 이미지 */
 .wrapper > main > section > .image {
-  width: 10%;
+  width: 15%;
   height: 100%;
   padding: 80px 100px;
 }
@@ -260,6 +257,10 @@ select{
   align-items: center;
 }
 
+section:last-child{
+
+  position: relative;
+}
 
 footer {
   width:70%;
@@ -269,10 +270,12 @@ footer {
   font-size: 0.8em;  
 
   padding: 10px;
-  margin:100px auto 0;
+  /* margin-top: 100px; */
+  margin:100px 200px;
   
 
-
+  position: absolute;
+  
 }
 
 footer p {
